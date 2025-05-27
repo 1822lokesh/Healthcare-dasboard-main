@@ -17,7 +17,6 @@
     "@mui/material": "^7.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-image-magnify": "^2.7.4",
     "react-router-dom": "^7.6.1"
   },
   "devDependencies": {
