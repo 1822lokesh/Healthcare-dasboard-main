@@ -4,8 +4,9 @@ import { Grid, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Layout from './layout/layout';
 import LeftMenu from './components/Left-Menu/left-menu';
-import Calender from './components/Calender/Calender';
+// import Calender from './components/Calender/Calender';
 import AppRoutes from './routes/routes';
+import Calender from './components/Calender/calender'
 
 function App() {
   const theme = useTheme();
