@@ -18,7 +18,7 @@ function App() {
         <Grid
           container
           sx={{
-            width: '100%',
+            width: 'auto',
             minHeight: '100vh',
             flexDirection: isMobile ? 'column' : 'row',
           }}
@@ -30,10 +30,10 @@ function App() {
           <Grid
             item
             sx={{
-              width: isMobile ? '100%' : '42%',
+              width: isMobile ? '100%' : '44%',
               flexGrow: 1,
               bgcolor: 'background.default',
-              p: 1,
+              // p: 1,
             }}
           >
             <AppRoutes />
@@ -44,9 +44,9 @@ function App() {
             <Grid
               item
               sx={{
-                width: '42%',
+                width: '38%',
                 bgcolor: 'background.default',
-                p: 3,
+                // p: 3,
               }}
             >
               <Calender />
