@@ -22,6 +22,7 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 import ChatIcon from "@mui/icons-material/Chat";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import { Link } from "react-router-dom";
+import { Settings } from "@mui/icons-material";
 
 const navItems = [
   { label: "Dashboard", path: "/", icon: <DashboardIcon /> },
@@ -52,7 +53,13 @@ export default function LeftMenu() {
           Healthcare
         </Typography>
       </Box>
-
+      <Box sx={{px : 2, mb : 1}}>
+        <Typography variant="caption" color="textSecondary">
+          General
+          </Typography>
+      </Box>
+      
+      
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
@@ -68,6 +75,11 @@ export default function LeftMenu() {
         ))}
       </List>
       <Divider sx={{ my: 1 }} />
+      <Box sx={{px : 2, mt: 2, mb : 1}}>
+        <Typography variant="caption" color="textSecondary">
+          Tools
+          </Typography>
+      </Box>
       <List>
         {secondaryNavItems.map((item) => (
           <ListItem key={item.label} disablePadding>
@@ -83,6 +95,20 @@ export default function LeftMenu() {
         ))}
       </List>
     </Box>
+//     <Box>
+//       <Divider />
+//       <List>
+//         <ListItem disablePadding>
+//           <ListItemButton component={Link} to="/settings" onClick={()} => setMobileOpen(false)}>
+//           <ListItemIcon>
+//           <SettingsIcon/>
+//           </ListItemIcon>
+//           <ListItemText primary="Settings" />
+//           </ListItemButton>
+
+//           </ListItem>>
+// t      </List>
+//     </Box>
   );
 
   return (
